@@ -19,7 +19,7 @@ import { AutotagModule } from './autotag/autotag.module';
       type: 'postgres',
       url: process.env.POSTGRES_URL,
       entities: [Authentication, JournalEntry],
-      synchronize: false,
+      synchronize: true,
     }),
     AuthModule,
     JournalModule,
